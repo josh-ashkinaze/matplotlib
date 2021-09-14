@@ -135,3 +135,13 @@ Python.org Python, or check your homebrew or macports setup.  Remember that
 the disk image installer only works for Python.org Python, and will not get
 picked up by other Pythons.  If all these fail, please :ref:`let us know
 <reporting-problems>`.
+
+
+Mac M1 Troubleshooting
+--------------------------
+At least one user reported a problem installing Matplotlib due to `easyinstall` on a Mac M1 with Python 3.6.8. If you are recieving an `easyinstall` related error, the solution the user found -- on 9/14/21 -- was to proceed as follows: 
+
+pip3 install kiwisolver==1.1
+brew install libjpeg
+pip3 install Pillow
+pip3 install matplotlib
